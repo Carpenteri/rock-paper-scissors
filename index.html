@@ -1,12 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rock Paper Scissors</title>
-</head>
-<body>
-    <script src="app.js"></script>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Rock Paper Scissors</title>
+    </head>
+    <body>
+        <header>
+            <h1>Rock Paper Scissors</h1>
+        </header>
+
+        <div class="scores">        
+            <div class="player">
+                <div id="player-label" class="badge">player</div>
+                <div id="player-score" class="score">0</div>
+            </div>
+            <div class="comp">
+                <div id="comp-label" class="badge">computer</div>
+                <div id="comp-score" class="score">0</div>
+            </div>
+        </div>
+
+        <div class="result">
+            <p>Paper covers rock. You win!</p>
+        </div>
+
+        <div class="buttons">
+            <div class="button" id="r">
+                <img src="images/rock.png" alt="" class="rock">    
+            </div>
+            <div class="button" id="p">
+                <img src="images/paper.png" alt="">    
+            </div>
+            <div class="button" id="s">
+                <img src="images/scissors.png" alt="">    
+            </div>
+        </div>
+        
+        <p id="action-msg">Make your move!</p> 
+
+        <script src="app_finished.js"></script>
+        
+    </body>
 </html>
